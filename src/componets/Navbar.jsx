@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         
         {/* Logo */}
-        <span className="text-transparent text-2xl font-semibold bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+        <span className="text-transparent text-2xl font-bold bg-clip-text bg-linear-to-r from-cyan-400 to-purple-500">
               Rutvik Parmar
             </span>
 

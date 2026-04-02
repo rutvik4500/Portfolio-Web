@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import profileImage from "../assets/logo.jpg";
+import profileImage from "../assets/rutvik.jpeg";
 import resume from "../assets/Rutvik_parmar1's Resume.pdf";
 
 const Hero = () => {
@@ -104,12 +104,12 @@ const Hero = () => {
             />
 
             {/* Image */}
-            <motion.img
-              src={profileImage}
-              alt="profile"
-              className="w-full h-full rounded-full object-cover border border-white/10"
-              whileHover={{ scale: 1.05 }}
-            />
+           <motion.img
+  src={profileImage}
+  alt="rutvik parmar"
+  className="w-full h-full rounded-full object-cover shadow-[0_0_150px_rgba(96,165,165,0.4)]"
+  whileHover={{ scale: 1.05 }}
+/>
 
             {/* Floating Skills (Smooth, not bounce) */}
             <motion.div
