@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import profileImage from "../assets/rutvik.jpeg";
 import resume from "../assets/Rutvik_parmar1's Resume.pdf";
+import { Outlet } from "react-router-dom";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -61,11 +62,9 @@ const Hero = () => {
             applications and scalable backend solutions.
           </motion.p>
 
-          <p className="text-gray-400 max-w-lg">
-           
-          </p>
+         
 
-          {/* Buttons */}
+         
           <div className="flex gap-3 flex-wrap justify-center md:justify-start">
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -85,7 +84,14 @@ const Hero = () => {
               Download CV <Download size={16} />
             </motion.a>
           </div>
+           <div className="pt-6 flex flex-col md:flex-row items-center gap-3 text-sm text-gray-500 justify-center md:justify-start">
+                        <span>📍 Ahmedabad, Gujarat</span>
+                        <span className="hidden md:block w-1 h-1 bg-gray-500 rounded-full"></span>
+                        <span>📱 +91-9824500654</span>
+                    </div>
         </motion.div>
+
+        
 
         {/* IMAGE */}
         <motion.div
@@ -138,7 +144,7 @@ const Hero = () => {
 
             <motion.div
               className="absolute top-8 -left-6 border px-4 py-1 rounded-lg text-yellow-400 text-sm"
-              animate={{ y: [0, -8, 0] }}
+              animate={{ y: [0, 0] }}
               transition={{ repeat: Infinity, duration: 5 }}
             >
              #
@@ -146,8 +152,9 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+     
     </section>
-  );
+   );
 };
 
 export default Hero;

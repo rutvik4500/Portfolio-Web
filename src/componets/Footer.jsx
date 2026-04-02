@@ -10,7 +10,7 @@ const Footer = () => {
       : "hover:text-cyan-400 transition";
 
   return (
-    <footer className="bg-slate-900 text-white mt-10">
+    <footer className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
         
        
@@ -27,6 +27,11 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-400">
             <li>
               <NavLink to="/" className={navLinkClass}>
+               Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className={navLinkClass}>
                 About
               </NavLink>
             </li>
