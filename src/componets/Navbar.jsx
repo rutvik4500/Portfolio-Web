@@ -26,11 +26,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/about" className={navLinkClass}>
-              About
-            </NavLink>
-          </li>
+        
           <li>
             <NavLink to="/projects" className={navLinkClass}>
               Projects
@@ -74,11 +70,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/about" onClick={() => setOpen(false)}>
-              About
-            </NavLink>
-          </li>
+         
           <li>
             <NavLink to="/projects" onClick={() => setOpen(false)}>
               Projects
