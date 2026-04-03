@@ -7,6 +7,7 @@ import Education from "../pages/Education";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
+import PageNot from "../pages/PageNot";
 
 let myRouter = createBrowserRouter([
   {
@@ -41,7 +42,9 @@ let myRouter = createBrowserRouter([
         path: "/skills",
         element: <Skills />,
       },
-      
+      {
+        path:"*",
+     element:<PageNot/>}
     ],
   },
 ]);

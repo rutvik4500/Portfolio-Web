@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import profileImage from "../assets/rutvik.jpeg";
 import resume from "../assets/Rutvik_parmar1's Resume.pdf";
-import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -26,7 +26,6 @@ const Hero = () => {
       />
 
       <div className="container mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-
         {/* TEXT */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
@@ -40,7 +39,7 @@ const Hero = () => {
             </span>
           </div>
 
-      <motion.h1
+          <motion.h1
             className="text-5xl md:text-6xl font-bold mt-6 leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,18 +61,15 @@ const Hero = () => {
             applications and scalable backend solutions.
           </motion.p>
 
-         
-
-         
           <div className="flex gap-3 flex-wrap justify-center md:justify-start">
-            <motion.a
+            <Link
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="/projects"
+              to={"/projects"}
               className="px-6 py-2.5 bg-blue-400 text-white rounded-full flex items-center gap-2"
             >
               View Projects <ArrowRight size={16} />
-            </motion.a>
+            </Link>
 
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -84,14 +80,12 @@ const Hero = () => {
               Download CV <Download size={16} />
             </motion.a>
           </div>
-           <div className="pt-6 flex flex-col md:flex-row items-center gap-3 text-sm text-gray-500 justify-center md:justify-start">
-                        <span>📍 Ahmedabad, Gujarat</span>
-                        <span className="hidden md:block w-1 h-1 bg-gray-500 rounded-full"></span>
-                        <span>📱 +91-9824500654</span>
-                    </div>
+          <div className="pt-6 flex flex-col md:flex-row items-center gap-3 text-sm text-gray-500 justify-center md:justify-start">
+            <span>📍 Ahmedabad, Gujarat</span>
+            <span className="hidden md:block w-1 h-1 bg-gray-500 rounded-full"></span>
+            <span>📱 +91-9824500654</span>
+          </div>
         </motion.div>
-
-        
 
         {/* IMAGE */}
         <motion.div
@@ -101,7 +95,6 @@ const Hero = () => {
           className="relative flex justify-center order-1 md:order-2"
         >
           <div className="relative w-64 h-64 md:w-96 md:h-96">
-
             {/* Glow */}
             <motion.div
               className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 blur-2xl"
@@ -110,12 +103,12 @@ const Hero = () => {
             />
 
             {/* Image */}
-           <motion.img
-  src={profileImage}
-  alt="rutvik parmar"
-  className="w-full h-full rounded-full object-cover shadow-[0_0_150px_rgba(96,165,165,0.4)]"
-  whileHover={{ scale: 1.05 }}
-/>
+            <motion.img
+              src={profileImage}
+              alt="rutvik parmar"
+              className="w-full h-full rounded-full object-cover shadow-[0_0_150px_rgba(96,165,165,0.4)]"
+              whileHover={{ scale: 1.05 }}
+            />
 
             {/* Floating Skills (Smooth, not bounce) */}
             <motion.div
@@ -131,7 +124,7 @@ const Hero = () => {
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 4 }}
             >
-             Node js
+              Node js
             </motion.div>
 
             <motion.div
@@ -147,14 +140,13 @@ const Hero = () => {
               animate={{ y: [0, 0] }}
               transition={{ repeat: Infinity, duration: 5 }}
             >
-             #
+              #
             </motion.div>
           </div>
         </motion.div>
       </div>
-     
     </section>
-   );
+  );
 };
 
 export default Hero;

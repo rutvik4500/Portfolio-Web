@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div>
               <span className="text-gray-500">Location:</span>
-              <p></p>
+              <p>ahmedabad , gujarat </p>
             </div>
             <div>
               <span className="text-gray-500">Experience:</span>
@@ -59,7 +59,7 @@ const About = () => {
             </div>
             <div>
               <span className="text-gray-500">Email:</span>
-              <p>  <a href="https://mail.google.com/" target="_blank">rutvikparmar4500@gmail.com</a></p>
+              <p>  rutvikparmar4500@gmail.com</p>
            
             </div>
           </div>
