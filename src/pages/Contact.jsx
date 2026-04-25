@@ -22,83 +22,44 @@ const Contact = () => {
             />
           </motion.div>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+    {/* <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 justify-center items-center text-center md:text-left"> */}
+    <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 justify-center text-center md:text-left">
 
-        <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-          className="space-y-6"
-        >
-          <h3 className="text-2xl font-semibold text-cyan-400">
-            Get in Touch
-          </h3>
+  <motion.div
+    initial={{ opacity: 0, x: -80 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+    className="space-y-6"
+  >
+    <h3 className="text-2xl  font-semibold text-cyan-400">
+      Get in Touch
+    </h3>
 
-          <p className="text-gray-400">
-           I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop a message!
-          </p>
+    <p className="text-gray-400">
+      I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop a message!
+    </p>
 
-          {/* Info */}
-          <div className="space-y-4">
+    <div className="space-y-4">
 
-            <div className="flex items-center gap-4">
-              <Mail className="text-cyan-400" />
-              <span>rutvikparmar4500@email.com</span>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Phone className="text-purple-400" />
-              <span>+91 9824500654</span>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <MapPin className="text-pink-400" />
-              <span>Ahmedabad, Gujarat, India</span>
-            </div>
-
-          </div>
-        </motion.div>
-
-      
-        <motion.form
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-          className="bg-white/5 backdrop-blur-lg border border-white/10 
-          p-6 rounded-2xl space-y-4"
-        >
-
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-3 rounded-lg bg-slate-900 border border-white/10 
-            focus:outline-none focus:border-cyan-400 transition duration-300"
-          />
-
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 rounded-lg bg-slate-900 border border-white/10 
-            focus:outline-none focus:border-purple-400 transition duration-300"
-          />
-
-          <textarea
-            rows="4"
-            placeholder="Your Message"
-            className="w-full p-3 rounded-lg bg-slate-900 border border-white/10 
-            focus:outline-none focus:border-pink-400 transition duration-300"
-          ></textarea>
-
-          <button
-            type="submit"
-         
-            className="w-full border rounded-2xl py-4 hover:bg-blue-300 hover:cursor-pointer hover:transition duration-150  hover:font-bold hover:text-black"
-          >
-            Send Message 
-          </button>
-
-        </motion.form>
+      <div className="flex items-center gap-4 justify-center md:justify-start">
+        <Mail className="text-cyan-400" />
+        <span>rutvikparmar4500@email.com</span>
       </div>
+
+      <div className="flex items-center gap-4 justify-center md:justify-start">
+        <Phone className="text-purple-400" />
+        <span>+91 9824500654</span>
+      </div>
+
+      <div className="flex items-center gap-4 justify-center md:justify-start">
+        <MapPin className="text-pink-400" />
+        <span>Ahmedabad, Gujarat, India</span>
+      </div>
+
+    </div>
+  </motion.div>
+
+</div>
 
      
 
