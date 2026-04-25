@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 import { motion } from "framer-motion";
 
-// Icons
 import htmlIcon from "../assets/icons/html.png";
 import cssIcon from "../assets/icons/css.png";
 import jsIcon from "../assets/icons/js.png";
-import tailwindIcon from "../assets/icons/tailwind.png";
+
+import tailwindIcon from "../assets/icons/tailwind.png"
 import reactIcon from "../assets/icons/react.png";
 import figrmaIcons from "../assets/icons/figma11.png";
 
@@ -46,14 +46,14 @@ const Skills = () => {
    <motion.div
   initial={{ opacity: 0, y: -30 }}
   animate={{ opacity: 1, y: 0 }}
-  className="text-center mb-18"
+  className="text-center mb-16"
 >
    <span className="text-transparent text-4xl font-bold bg-clip-text bg-linear-to-l from-red-400 to-green-400">My Skills</span>
 
   <motion.div
     className="h-1 w-24 mx-auto mt-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"
     initial={{ width: 0 }}
-    animate={{ width: "10rem" }}
+    animate={{ width: "8rem" }}
     transition={{ duration: 0.8, delay: 0.3 }}
   />
 </motion.div>

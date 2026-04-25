@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import profileImage from "../assets/rutvik.jpeg";
-import resume from "../assets/Rutvik_parmar1's Resume.pdf";
+import resume from "../assets/Rutvik's Resume.pdf";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

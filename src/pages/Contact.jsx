@@ -7,16 +7,20 @@ const Contact = () => {
     <section className="min-h-screen bg-black text-white px-6 py-16 overflow-hidden">
 
 
-      <motion.h2
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="text-4xl md:text-5xl font-bold text-center mb-12 
-        bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 
-        text-transparent bg-clip-text"
-      >
-        Contact Me 
-      </motion.h2>
+            <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16"
+          >
+             <span className="text-transparent text-4xl font-bold bg-clip-text bg-linear-to-l from-red-400 to-green-400">Contact US </span>
+          
+            <motion.div
+              className="h-1 w-24 mx-auto mt-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"
+              initial={{ width: 0 }}
+              animate={{ width: "10rem" }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            />
+          </motion.div>
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
 

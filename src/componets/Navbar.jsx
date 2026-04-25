@@ -70,7 +70,6 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-         
           <li>
             <NavLink to="/projects" onClick={() => setOpen(false)}>
               Projects
